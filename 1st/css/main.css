@@ -1,0 +1,411 @@
+body {
+  background-color: #000;
+  font: "Montserrat", sans-serif;
+  font-size: 130%;
+  line-height: 200%;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  height: fit-content;
+  text-align: center;
+  line-height: 130px;
+  font-size: 7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #f7fff7;
+  text-shadow: 5px 5px 0px #ff0072, 10px 10px 0px #f6ef6f, 15px 15px 0px #b8f7ff;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  border-bottom: 1.5px solid #b8f7ff;
+  border-radius: 0px 0px 5px 5px;
+}
+
+main {
+  display: grid;
+  justify-items: start;
+}
+
+aside {
+  display: block;
+  width: fit-content;
+  grid-column-start: 1;
+}
+
+section {
+  grid-column-start: 2;
+  margin: 0px 10px 20px 5px;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #000;
+  color: #f7fff7;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  margin: 0px 5px 5px 5px;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #000;
+  color: #f7fff7;
+  font-family: "Montserrat", sans-serif;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  box-sizing: border-box;
+  position: sticky;
+  font-size: 60%;
+  top: 0;
+  width: 83%;
+  margin: 0px 20px 20px 10px;
+  padding: 13px 13px 13px 13px;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+  border-right: 1.5px solid #b8f7ff;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #f7fff7;
+  transition: all 0.3s linear;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  font-size: 100%;
+}
+
+.c1,
+.c2 {
+  text-decoration: none;
+  border-bottom: 2px solid #ff0072;
+  color: #f7fff7;
+  transition: all 0.3s linear;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  padding: 0px 3px 0px 3px;
+}
+
+.sub {
+  display: none;
+  position: absolute;
+  transition: all 0.3 ease-out;
+  width: fit-content;
+  left: 63%;
+  background-color: #000;
+  padding: 6px;
+  border: 1px solid #b8f7ff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#sub3 {
+  left: 92%;
+}
+
+.sub a {
+  border-bottom: 1px solid #f6ef6f;
+}
+
+nav ul li:hover .sub {
+  display: inline-block;
+  width: 110%;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid #b8f7ff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  color: #f7fff7;
+}
+
+h3 {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  text-align: center;
+  border-bottom: 2px solid #b8f7ff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  color: #f7fff7;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+aside {
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  padding: 3px;
+  margin: 1px;
+}
+
+hr {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  background-color: #b8f7ff;
+  border: none;
+}
+
+iframe {
+  float: right;
+  margin: 15px;
+  width: 30%;
+  border: 1px solid #b8f7ff;
+  transition: all 0.4s ease-in;
+}
+
+iframe:hover {
+  transform: translate(-2px, -3px);
+  box-shadow: 3px 4px 0px #ff0072;
+}
+
+#kj:hover {
+  transform: translate(2px, -3px);
+  box-shadow: -3px 4px 0px #ff0072;
+}
+
+#animation1 {
+  display: block;
+  float: left;
+  height: 100px;
+  margin: 0px 5px 0px 5px;
+  width: 40%;
+  transition: all 0.5s ease-in;
+}
+
+#sun {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  animation: slide 4s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#animation1:hover #sun {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    color: #ffffff;
+    top: 60%;
+    left: 0%;
+  }
+
+  10% {
+    color: #ffffff;
+    top: 55%;
+    left: 5%;
+  }
+  20% {
+    color: #ffe484;
+    top: 50%;
+    left: 10%;
+  }
+  30% {
+    color: #ffe484;
+    top: 45%;
+    left: 15%;
+  }
+  40% {
+    color: #ffcc33;
+    top: 40%;
+    left: 20%;
+  }
+
+  50% {
+    color: #ffcc33;
+    top: 35%;
+    left: 30%;
+  }
+
+  60% {
+    color: #fc9601;
+    top: 30%;
+    left: 40%;
+  }
+
+  70% {
+    color: #fc9601;
+    top: 25%;
+    left: 50%;
+  }
+
+  80% {
+    color: #d14009;
+    top: 20%;
+    left: 60%;
+  }
+
+  90% {
+    color: #d14009;
+    top: 15%;
+    left: 70%;
+  }
+
+  100% {
+    color: #d14009;
+    top: 10%;
+    left: 80%;
+  }
+}
+
+table {
+  background-color: #f7fff7;
+  width: 90%;
+  border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-spacing: 2px;
+  position: relative;
+  left: 5%;
+}
+
+thead,
+tbody {
+  font-size: 63%;
+  font-weight: bold;
+}
+
+th {
+  border-bottom: 2px solid #ff0072;
+  color: #000;
+}
+
+th:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+
+th:last-child {
+  border-radius: 0px 10px 0px 0px;
+}
+
+td {
+  color: #000;
+  text-align: center;
+  border-bottom: 2px solid #b8f7ff;
+}
+
+thead {
+  background-color: rgba(255, 97, 168, 0.6);
+}
+
+tbody tr:hover {
+  background-color: rgba(246, 239, 111, 0.6);
+}
+
+.baba {
+  border: 1px solid #ff0072;
+}
+
+#surprise {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  top: -50px;
+  width: 100%;
+  line-height: 10;
+  margin-bottom: 5px;
+}
+
+#mid {
+  width: 100%;
+  height: 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  visibility: hidden;
+}
+
+#fngr {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  animation: circ 3s linear;
+  animation-iteration-count: infinite;
+  color: #f6ef6f;
+}
+
+.baba:hover #mid {
+  visibility: visible;
+}
+
+.baba:hover #surprise {
+  visibility: hidden;
+}
+
+.hover {
+  text-transform: uppercase;
+  color: #f6ef6f;
+}
+
+@keyframes circ {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-250px, 120px);
+  }
+
+  50% {
+    transform: translate(0px, 200px);
+  }
+
+  75% {
+    transform: translate(250px, 120px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#logo {
+  width: 50px;
+  margin: 20px 5px 10px 5px;
+}
+
+footer a:hover {
+  color: #ff0072;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li::before {
+  content: "\2666";
+  color: #b8f7ff;
+  display: inline-block;
+}

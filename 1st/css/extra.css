@@ -1,0 +1,183 @@
+nav .main li:hover .c1 {
+  background-color: #f7fff7;
+  color: #000;
+  box-shadow: -3px 5px 0px #f6ef6f;
+  border-radius: 7px;
+  transform: translate(2px, -3px);
+  font-weight: bold;
+  border-left: 1px solid #ff0072;
+}
+
+h1:hover,
+h3:hover {
+  background-color: #f7fff7;
+  color: #000;
+  box-shadow: -3px 5px 0px #ff0072;
+  border-radius: 7px;
+  transform: translate(2px, -3px);
+  font-weight: bold;
+  border-left: 1px solid #b8f7ff;
+}
+
+nav .main li:hover .sub li:hover .c2 {
+  box-shadow: -3px 4px 0px #ff0072;
+  border-left: 1px solid #f6ef6f;
+  background-color: #f7fff7;
+  color: #000;
+  border-radius: 3px;
+  transform: translate(2px, -3px);
+  font-weight: bold;
+}
+
+nav .main li:hover .sub li:hover .c2:active {
+  box-shadow: -3px 5px 0px #f7fff7;
+  background-color: #ff0072;
+  color: #000;
+  border-radius: 3px;
+  transform: translate(2px, -3px);
+  font-weight: bold;
+}
+
+.c1::first-letter,
+h1::first-letter,
+h3::first-letter {
+  color: #ff0072;
+  font-weight: 900;
+}
+
+.c2::first-letter {
+  color: #f6ef6f;
+  font-weight: 900;
+}
+
+span {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+i {
+  margin-left: 2px;
+  transition: all 0.6s ease;
+}
+
+nav ul li:hover a i {
+  transform: rotate(90deg);
+}
+
+.up {
+  transition: all 0.4s ease-in;
+}
+
+.up:hover {
+  text-decoration: none;
+  color: #000;
+  transform: translate(2px, -3px);
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 100%;
+  background-color: #f6ef6f;
+  box-shadow: -3px 4px 0px #f7fff7;
+  border-radius: 7px;
+  font-weight: bold;
+  border-bottom: 2px solid #ff0072;
+  border-left: 1px solid #ff0072;
+  cursor: pointer;
+  padding: 0px 2px;
+}
+
+.hword {
+  color: #ff0072;
+  font-weight: 900;
+}
+
+.up:hover::first-letter {
+  color: #ff0072;
+  font-weight: 900;
+}
+
+*::selection {
+  color: #ff0072;
+  background-color: #f6ef6f;
+}
+
+#name {
+  display: inline-block;
+  position: relative;
+}
+
+/*nix is the photo that appears when hovered over name in 1st page*/
+
+#nix {
+  width: 35%;
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  top: 120%;
+  left: 30%;
+  border-bottom: 2px solid #ff0072;
+  border-left: 1px solid #ff0072;
+  box-shadow: -3px 4px 0px #f7fff7;
+  transition: all 0.4s ease-in;
+}
+
+#name:hover #nix {
+  display: inline-block;
+}
+
+#welcome {
+  position: relative;
+  z-index: 2;
+}
+
+#purpose {
+  position: relative;
+  z-index: -1;
+}
+
+.flip {
+  width: 27%;
+  border: 1px solid #b8f7ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  left: 0;
+}
+
+#car {
+  z-index: 2;
+  backface-visibility: hidden;
+  transition: all 1s linear;
+}
+
+#cyber {
+  position: absolute;
+  transform: rotateY(180deg);
+  transition: all 1s linear;
+  z-index: 1;
+  padding: 5px;
+  color: #f6ef6f;
+}
+
+.hlder {
+  transform-style: preserve-3d;
+  margin: 4px;
+}
+
+.hlder:hover #car {
+  transform: rotateY(-180deg);
+}
+
+.hlder:hover #cyber {
+  transform: rotateY(0deg);
+}
+
+#kj {
+  width: 36%;
+  display: block;
+  float: left;
+  margin: 10px;
+  border: 1px solid #b8f7ff;
+  transition: all 0.4s ease-in;
+}
